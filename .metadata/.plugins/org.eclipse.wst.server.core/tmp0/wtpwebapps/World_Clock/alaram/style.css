@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-size: cover;
+  background-color: rgb(35, 35, 35);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+h2 {
+  margin-left: 1.25rem;
+  color: #00ff00;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 1.25rem 0rem;
+}
+
+.navbar ul li {
+  /* font-family: sans-serif;  */
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #00ff00;
+  padding: 0.5rem 1.563rem;
+  transition: all 0.5s ease;
+}
+
+.navbar ul li a:hover {
+  background-color: #00ff00;
+  color: black;
+  box-shadow: 0 0 10px #00ff00;
+  border-radius: 8px;
+}
+.navbar ul li span a {
+  margin-right: 0.625rem;
+  background-color: red;
+  color: #fff;
+  padding: 0.5rem 1.563rem;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+#test {
+  display: flex;
+  justify-content: center;
+  margin-top: 25vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 27.5rem;
+  padding: 1.875rem 1.875rem 2.375rem;
+  /* background: #fff; */
+
+  background-color: rgba(0, 0, 0, 0.205);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+
+  flex-direction: column;
+  box-shadow: 0 10px 25px blue;
+}
+.container #clockImg {
+  max-width: 7.188rem;
+  /*animation: shake 0.5s infinite;*/
+}
+.container h1 {
+  font-size: 2.375rem;
+  font-weight: 500;
+  margin: 1.875rem 0;
+  color: #00ff00;
+}
+.container .content {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content.disable {
+  cursor: no-drop;
+}
+.content .column {
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #1100ff;
+  width: calc(100% / 3 - 5px);
+}
+.content.disable .column {
+  opacity: 0.6;
+  pointer-events: none;
+}
+.column select {
+  width: 100%;
+  height: 53px;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 19px;
+  color: red;
+  font-weight: bold;
+}
+.container button {
+  width: 100%;
+
+  border: #00ff00;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 17px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #00ff00;
+  background: rgb(38, 35, 35);
+  border-radius: 20px;
+}
+.container button:hover {
+  background-color: #00ff00;
+  color: black;
+  box-shadow: 0 0 10px #00ff00;
+  border-radius: 20px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .container,
+  .navbar {
+    zoom: 70%;
+  }
+}
+@media screen and (max-width: 333px) {
+  .container,
+  .navbar {
+    zoom: 50%;
+  }
+}
+@media screen and (max-width: 247px) {
+  .container,
+  .navbar {
+    zoom: 30%;
+  }
+}

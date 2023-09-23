@@ -1,0 +1,6 @@
+127.0.0.1 - - [03/Feb/2023:20:47:06 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Feb/2023:20:47:08 +0530] "GET /World_Clock/index.jsp HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [03/Feb/2023:20:47:08 +0530] "GET /World_Clock/signin.jsp HTTP/1.1" 200 1074
+0:0:0:0:0:0:0:1 - - [03/Feb/2023:20:47:08 +0530] "GET /World_Clock/css/signup.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Feb/2023:20:47:08 +0530] "GET /World_Clock/images/login.jpg HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [03/Feb/2023:20:47:08 +0530] "GET /favicon.ico HTTP/1.1" 404 762

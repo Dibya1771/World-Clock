@@ -1,0 +1,168 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+  
+<%-- If Not signin then do signin first
+<%
+	if(session.getAttribute("name")==null)	{
+		response.sendRedirect("signin.jsp");
+	}
+%>
+  --%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>World Clock</title>
+ <link rel="stylesheet" href="css/index.css">
+    
+</head>
+<body>
+
+<nav class="navbar">
+         <!-- l0go -->
+        <!-- <h1><a href="#"><img src="images/logo.png" alt=""></a>WOrld Clock</h1> -->
+        <h1>World Clock</h1>
+
+       
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="profile.jsp">Profile</a></li>
+            <li><span><a href="logout">Logout</a></span></li>
+        </ul>
+    </nav>
+
+<!-- home -->
+    <section id="home">
+
+      <div id="clock">11 Dec 2022 <br>
+        8:10:45</div>
+
+        <div class="main">
+            <h1 class="headings">Hii <span><%= session.getAttribute("name") %></span>,<br>Welcome to our website<span> World Clock</span><br>Are you interested to look towards<br>the times of different Continents?<br> Then <span>click</span> the below button to continue </h1>
+             
+            <a href="allclock.jsp" target="blank"><button class="btn">
+                Show Time
+            </button></a><br>
+            
+            <a href="alaram/alaram.html" target="blank"><button class="btn">
+                Set Alarm
+            </button></a>
+        </div>
+    </section>
+<!-- home end -->
+
+<!-- About -->
+    <section id="about">
+
+        <div class="big_container">
+            <div class="inner">
+              <h1 class="headings">ABOUT US</h1>
+              <div class="bord"></div>
+      
+              <div class="row">
+                <div class="col">
+                  <div class="prof">
+                    <!--<img src="images/p1.jpeg" alt="">  -->
+                    <img src="images/biku.jpg" alt="">
+                    
+                    <div class="pname">Dibya Ranjan Rath</div>
+            
+                    <p>
+                    I am a 3rd year B-Tech student in CSE branch of Silicon Institute Of Technology, Bhubaneswar<br>Sic-20BCSE62 
+                     <!--  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, -->
+                    </p>
+                  </div>
+                </div>
+      
+                <div class="col">
+                  <div class="prof">
+                    <img src="images/p2.jpeg" alt="">
+                    <div class="pname">Soumendra Pradhan</div>
+      
+                    <p>
+                      I am a 3rd year B-Tech student in CSE branch of Silicon Institute Of Technology, Bhubaneswar<br>Sic-21BCSL08
+                    </p>
+                  </div>
+                </div>
+      
+                <div class="col">
+                  <div class="prof">
+                    <img src="images/p3.jpeg" alt="">
+                    <div class="pname">Aditya Prasad</div>
+      
+                    <p>
+                    I am a 3rd year B-tech student in CEN branch of Silicon Institute Of Technology, Bhubaneswar<br>Sic-20BCEF95 
+                    </p>
+                  </div>
+                </div>
+            </div>
+              
+        </div>
+        </div>
+    </section>
+<!-- About end -->
+
+
+
+ <!-- Contact -->
+    <section id="contact">
+
+        <div class="big_container">
+            <div class="inner">
+              <h1 class="headings">Contact Us</h1>
+              <div class="bord"></div>
+      
+              <div class="row">
+                <div class="col">
+                  <div class="prof">
+                    <a href="https://www.google.com/maps/place/Silicon+Institute+of+Technology/@20.3506823,85.8041473,17z/data=!3m1!4b1!4m5!3m4!1s0x3a1908e064769e73:0x9288172f3a98c7a4!8m2!3d20.3506773!4d85.806336" target="blank">
+                        <img src="images/location.jpg" alt=""></a>
+                    <div class="pname">
+                        Location
+                    </div>
+                    <p>
+                        Silicon College <br>
+                        Bhubaneswar, Khorda-751002
+                        
+                    </p>
+                  </div>
+                </div>
+
+                <div class="col">
+                    <div class="prof">
+                      <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank"><img src="images/mail.png" alt=""></a>
+                      <div class="pname">Email</div>
+        
+                      <p>
+                        info.college@silicon.ac.in<br>
+                       cse.ajpstudent@silicon.ac.in
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="prof">
+                        <a href="https://www.truecaller.com/auth/sign-in" target="blank">
+                      <img src="images/call.png" alt=""> </a>
+                      <div class="pname">Contact number</div> 
+        
+                      <p>
+                        (+91)784908XX<br>
+                        (751)132000XX
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </section> 
+
+<!--  ...........................................................   -->
+
+<script src="js/home_clock.js"></script>
+
+</body>
+</html>

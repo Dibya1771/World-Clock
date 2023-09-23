@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\ASUS\Desktop\World Clock\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1730758592.index
+3160213683.index
+1365617728.index
+4229562090.index
+3660760361.index
+3024993847.index
+4031203719.index

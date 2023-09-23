@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  z-index: 999;
+  /*       height: 100px;
+ */
+}
+.navbar a img {
+  height: 50px;
+  /* margin-left: 20px; */
+}
+.navbar h1 {
+  margin-left: 15px;
+  font-size: 40px;
+  color: #00ff00;
+  text-shadow: 0 0 1px #00ff00;
+  /* margin-top: 5px; */
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 20px 0px;
+}
+
+.navbar ul li {
+  font-family: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: #00ff00;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+}
+
+/*This change effect*/
+.navbar ul li a:hover {
+  background-color: #00ff00;
+  color: black;
+  box-shadow: 0 0 10px #00ff00;
+  border-radius: 8px;
+}
+.navbar ul li span a {
+  margin-right: 10px;
+  background-color: red;
+  color: #fff;
+  padding: 8px 25px;
+  transition: all 0.5s ease;
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/*  Home   */
+#home {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.7);
+  /*  background-color:black;  */
+  height: 46.563rem; /*840*/
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  background: url("../images/bg-home.jpg") no-repeat center center/cover;
+  /*   background-color:black;  */
+  height: 50.375rem;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#clock {
+  width: 21.875rem;
+  height: 9.313rem;
+
+  position: absolute;
+  top: 12.5rem;
+  left: 6.25rem;
+  padding: 0.625rem;
+  align-items: center;
+  text-align: center;
+  /* border: 2px solid black; */
+  border-radius: 1.25rem;
+  box-shadow: 10px 10px 30px #00ff00;
+  color: #00ff00;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 2.813rem;
+}
+
+.main {
+  /*For designing the content */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+
+.headings {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin: 3.063rem 0rem;
+}
+.headings span {
+  color: #00ff00;
+  font-size: 2.4rem;
+}
+.btn {
+  padding: 0.625rem 2.188rem;
+  background-color: blue;
+
+  border: 1px solid rgb(0, 0, 255);
+  outline: none;
+  transition: 0.5s ease;
+  color: #fff;
+  border-radius: 8px;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #00ff00;
+  color: black;
+  box-shadow: 0 0 5px #00ff00, 0 0 15px #00ff00;
+  font-weight: bold;
+}
+
+/*About us */
+#about {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  background: linear-gradient(to top, white, rgba(0, 0, 0, 0.94));
+  padding: 3.563rem; /*default 20px*/
+  margin-bottom: 50px;
+  height: 650px;
+}
+
+.big_container {
+  height: 40.625rem;
+  padding: 2.5rem 0;
+  background: white;
+  color: #434343;
+  text-align: center;
+  border-radius: 10px;
+}
+.inner {
+  max-width: 75rem;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 1.25rem;
+}
+
+.bord {
+  width: 16.25rem;
+  height: 0.313rem;
+  background: #00ff00;
+  margin: 1.625rem auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.col {
+  flex: 33.33%;
+  max-width: 33.33%;
+  box-sizing: border-box;
+  padding: 0.938rem;
+}
+.prof {
+  background: #fff;
+  padding: 1.875rem;
+}
+.prof img {
+  width: 6.25rem;
+  width: 6.25rem;
+  height: 100px;
+  border-radius: 50%;
+}
+.pname {
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  margin: 1.25rem 0;
+  font-weight: bold;
+}
+
+/* Contact us */
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 3.563rem;
+  height: 0.625rem;
+}
+@media screen and (max-width: 1180px) {
+  #clock {
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+
+  .main {
+    position: relative;
+    top: 0%;
+    left: 0%;
+  }
+  .headings {
+    font-size: 1.2rem;
+    margin: none;
+  }
+  .headings span {
+    font-size: 1.4rem;
+  }
+}
