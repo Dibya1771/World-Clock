@@ -26,7 +26,7 @@ Query: select * from user1;
 ## 4. Sample Screenshots  
 Signup page (i.e., Registration page)  
 ![image](https://github.com/Dibya1771/World-Clock/assets/108383867/60e5e293-1097-49fa-84ec-e9a8cb76b6cb)
-![image](https://github.com/Dibya1771/World-Clock/assets/108383867/82c94837-7991-4af2-b040-d2a64bf324f3)
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/82c94837-7991-4af2-b040-d2a64bf324f3)  
 Sign in page (i.e., Login page)  
 ![image](https://github.com/Dibya1771/World-Clock/assets/108383867/c23adc6d-6c78-495a-84d6-fff0a74c96e5)
 Home page  
