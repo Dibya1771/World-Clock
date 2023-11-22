@@ -1,47 +1,46 @@
-# World-Clock
+# World Clock: Discover the world's Time, Anywhere, Anytime
+###### A projeect made using servlet, Jsp, Tomcat, HTML, CSS, JS and Orale<br>
 
-Project Name: Game Zone: The Ultimate Gaming Destination
-Date: 21/04/2023 to 5/05/2023
-Introduction:
-Game Zone is an online gaming website that offers a one-stop destination for gaming enthusiasts. The website is built using HTML, CSS, JavaScript, JSP, MySQL, and JDBC technologies.
-Features:
-• The Home page of Game Zone consists of two tabs: Home and Contact Us.
-• In Home page there are three buttons: Quick Play, Game Registration, and View Details.
-• Users can register themselves by providing their name, email, phone number and password, and paying a registration fee for it. And these details are stored in the users database.
-• View Details page generates a random gaming ID for each user. So, after registration, users are required to go to the View Details page to obtain their randomly generated gaming ID.
-• Quick Play button authenticates users through the user database to access the Game Library page.
-• Game Library page includes eight games, such as Tic-tac-toe, Stickman Jump, Stack tower, Love calculator, Velocity Challenge, Astro Assault, Flappy Bird and playable piano. From there, the users can select a game to start playing.
-• The real-time scores for each game are displayed at the top of the page, and the high scores are stored and retrieved from the database.
-• Finally, users can contact the website administrators through the Contact Us tab.
-Workflow:
-• User visits the Game Zone website.
-• User register by providing their name, email, phone number and password, and user have to pay a registration fee for it.
-• View Details page generates a random gaming ID for each user.
-• User clicks on the Quick Play button to access the Game Library page.
-• User selects a game and starts playing.
-• Real-time score display for each game and high scores are stored and retrieved from the database.
-• Users can contact the website administrators through the Contact Us tab.
-Sample Output:
-![Alt text](image.png)
+## 1. Abstract
+We all know that every part of the world has their own time zone. Imagine if we could see every possible clock of the world at one place. Isn’t it would be wonderful. Well that is what our project is aiming at. The project is collecting current local date and time of the user. The goal is to display all the time zone around the world at one place. In this project, we have built many digital clock with 12 hour count time. The clock runs from 00:00:00 to 11:59:59 and then back to 00:00:00. Our display has six digits, two-two digits for hours and minutes respectively and two for seconds. Apart from time it also displays the date in DD/MM/YYYY format. Our project is also capable of managing alarm. We have a sign up as well as sign in page where user can view their profile in the website. And also Home page, about us page and contact us helps in reaching us.  
+## 2. Tools and Environment
+• Processor: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz 2.50 GHz  
+• Installed RAM: 8.00 GB (7.84 GB usable)  
+• Product ID: 00356-24575-76312-AAOEM  
+• System type: 64-bit operating system, x64-based processor
+• Edition: Windows 11 Home Single Language  
+• Text Editor: Eclipse IDE  
+• Server: Tomcat v9.0 Server  
+• Database: Oracle Database 10g Express Edition  
 
-![Alt text](image-1.png)
-
-![Alt text](image-2.png)
-
-![Alt text](image-3.png)
-
-![Alt text](image-4.png)
-
-![Alt text](image-5.png)
-
-![Alt text](image-6.png)
-
-![Alt text](image-7.png)
-
-Database:
-![Alt text](image-8.png) ![Alt text](image-9.png)
-Conclusion:
-Game Zone provides an exciting gaming experience for users with its extensive range of games and real-time score display. The use of modern technologies such as JSP, HTML, CSS, JavaScript, MySQL, and JDBC ensures a smooth and efficient user experience.
-
-Submitted By-
-Dibya Ranjan Rath (SIC- 20BCSE62, B2_12)
+## 3. System Analysis  
+3.1 Query:  
+create table user1(uname varchar(50), upwd varchar(20),uemail varchar(50) primary key,umobile varchar(20));
+3.2. Table Structure  
+#### user1 Table:  
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/e0dcee8c-a51f-4aa4-a16b-d49f3bac619b)
+#### Some inputted data inside user1 table:  
+Query: select * from user1;
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/0ec73c96-cd5a-43b7-bd5e-b301de79ad79)
+<br>
+## 4. Sample Screenshots  
+Signup page (i.e., Registration page)  
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/60e5e293-1097-49fa-84ec-e9a8cb76b6cb)
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/82c94837-7991-4af2-b040-d2a64bf324f3)
+Sign in page (i.e., Login page)  
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/c23adc6d-6c78-495a-84d6-fff0a74c96e5)
+Home page  
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/43249354-a7cb-4d96-9216-268bde5a9198)
+About Us page  
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/15a24d84-4aee-4c4c-9b29-326d137c2a48)
+Contact Us page  
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/9c2cc414-ccb8-4ac8-9173-c6cdfbe6eeb4)
+Profile page  
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/579ef462-b1f8-48bb-9428-2452be87c972)
+Alarm page  
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/ceb4e1e9-6200-427f-8fb7-345b852ff85c)
+All continents time zone page  
+![image](https://github.com/Dibya1771/World-Clock/assets/108383867/f8c44c01-4aa0-4a9a-83fc-dd3442caf373)
+<br>
+## 5. Conclusion
+I have completed this project successfully using Html, CSS, JavaScript, Servlet, JSP and database and have successfully built an alarm manager and a digital clock with 12-hour count time format for every time zone of continent with current local time.
