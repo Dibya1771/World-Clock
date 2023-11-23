@@ -23,7 +23,10 @@ create table user1(uname varchar(50), upwd varchar(20),uemail varchar(50) primar
 Query: select * from user1;
 ![image](https://github.com/Dibya1771/World-Clock/assets/108383867/0ec73c96-cd5a-43b7-bd5e-b301de79ad79)
 <br>
-## 4. Sample Screenshots  
+## 4. Sample Outputs:  
+#### Tutorial Video:  
+
+#### Sample Screenshots:  
 Signup page (i.e., Registration page)  
 ![image](https://github.com/Dibya1771/World-Clock/assets/108383867/60e5e293-1097-49fa-84ec-e9a8cb76b6cb)
 ![image](https://github.com/Dibya1771/World-Clock/assets/108383867/82c94837-7991-4af2-b040-d2a64bf324f3)  
