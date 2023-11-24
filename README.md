@@ -25,8 +25,9 @@ Query: select * from user1;
 <br>
 ## 4. Sample Outputs:  
 #### Tutorial Video:  
-
+https://github.com/Dibya1771/World-Clock/assets/108383867/e41c892d-755f-443c-9f68-1b6a378118af
 #### Sample Screenshots:  
+
 Signup page (i.e., Registration page)  
 ![image](https://github.com/Dibya1771/World-Clock/assets/108383867/60e5e293-1097-49fa-84ec-e9a8cb76b6cb)
 ![image](https://github.com/Dibya1771/World-Clock/assets/108383867/82c94837-7991-4af2-b040-d2a64bf324f3)  
